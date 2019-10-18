@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.f_container {
+    display: flex;
+    flex: 1;
+}
+
+header {
+    border-bottom: 1px solid #8fafb2;
+}
+
+footer {
+    border-top: 1px solid #8fafb2;
+}
+
+nav {
+    border-right: 1px solid #8fafb2;
+}
+
+aside {
+    border-left: 1px solid #8fafb2;
+}
+
+.f_container article {
+    flex: 1;
+}
+
+header, footer {
+    height: 10vh;
+}
+
+.f_container nav, .f_container aside {
+    flex: 0 0 20vw;
+}
+
+.f_container nav {
+    order: -1;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+header, footer {text-align: center; background-color: aliceblue;}
+nav, article, aside { padding: 20px;}
+
+@media screen and (max-width: 575px) {
+    .f_container {
+    display: block;
+    }
+}
